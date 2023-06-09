@@ -3,7 +3,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --black-gradient: linear-gradient(
     144.39deg,
@@ -13,36 +12,39 @@
   );
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
-
+body{
+  color: white;
+}
 * {
   scroll-behavior: smooth;
 }
 
 .text-gradient {
-  background: radial-gradient(
+  /* background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
-  );
+    #FFC395  0.89%,
+    #FF9F4D 17.23%,
+    #FF5D00   42.04%,
+    #FF641F 55.12%,
+    #FF641F 71.54%,
+    #FF5D00 100%
+  ); */
+  background-color: #FF5D00 ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
 }
 
 .bg-blue-gradient {
   background: linear-gradient(
     157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
+    #FFC395 -43.27%,
+    #FF9F4D -21.24%,
+    #FF5D00 12.19%,
+    #FF641F 29.82%,
+    #FF641F 51.94%,
+    #FF5D00 90.29%
   );
 }
 
@@ -54,7 +56,11 @@
     #11101d 91.61%
   );
 }
-
+.herobg{
+  background-image: url("./assets/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .bg-black-gradient-2 {
   background: linear-gradient(
     -168.39deg,
