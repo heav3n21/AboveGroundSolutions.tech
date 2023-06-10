@@ -17,34 +17,46 @@ import {
 
 const App = () => (
 
-  <div className="bg-primary w-full text-lg overflow-hidden" >
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-       <Navbar/>
+  <div className="bg-primary w-full text-lg overflow-hidden  shadow-xl" >
+    <div className={`${styles.paddingX} ${styles.flexCenter} shadow-xl bg-primary `}>
+      <div className={`${styles.boxWidth} `}>
+        <Navbar />
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.flexStart} herobg`}>
+    <div className={`bg-primary ${styles.paddingX}  ${styles.flexStart} herobg`}>
       <div className={`${styles.boxWidth}`}>
-        <Hero/>
+        <Hero />
 
+        <Stats />
       </div>
 
     </div>
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart} `}>
       <div className={`${styles.boxWidth}`}>
-        <Stats/>
-        <Business/>
-        <Billing/>
-        <CardDeal/>
-        <Testimonials/>
-        <Clients/>
-        <CTA/>
-        <Footer/>
+        <Business />
+
 
       </div>
 
     </div>
+    <div className=" --test">
+      <Billing />
+        <div className={`${styles.paddingX}  ${styles.flexCenter} ${styles.boxWidth} shadow-xl `}>
+      </div>
+    </div>
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart} `}>
+      <div className={`${styles.boxWidth}`}>
+      <CTA />
+      {/* <CardDeal />
+      <Testimonials />
+      <Clients /> */}
+      
+
+      </div>
+
+    </div>
+      <Footer />
   </div>
 );
 

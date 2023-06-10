@@ -23,23 +23,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Best",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "The best reliable men you can trust asdfasdfsadfsdfsadf asdfasdf sadfasdf adsfdsf.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Safety",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "We take proactive steps make sure your asdfasdfadsf adsfsafddsf sadfasdfsadf adsfsd.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "fast",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "A asdfsd sadf sad fsdfsad dsafasdf dsafadsf sadf sadf sad sd s adfsadfsdafsdaf sdaf ds.",
   },
 ];
 
@@ -73,18 +73,18 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Carlos Garcia",
+    value: "CEO",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "from",
+    value: "asfdasdf",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "26years",
+    value: "234",
   },
 ];
 

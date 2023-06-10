@@ -15,7 +15,7 @@ const Hero = () => {
                         SOLUTIONS.      
                                       </h1>
                                       <div className="ss:flex hidden md:mr-4 mr-0 "> 
-                                      <GetStarted/>
+                                   
                                       </div>
                 </div>
                 <div className="l sm:mt-16 flex  w-fit items-center py-[6px] px-4 border shadow-xl rounded-[10px] mb-2 ">

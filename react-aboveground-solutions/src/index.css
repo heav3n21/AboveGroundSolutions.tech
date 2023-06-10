@@ -56,10 +56,39 @@ body{
     #11101d 91.61%
   );
 }
-.herobg{
-  background-image: url("./assets/bg2.jpg");
+.herobg {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .herobg {
+    background-image: url("./assets/bg5.jpg");
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .herobg {
+    background-image: url("./assets/bg8.avif");
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .herobg {
+    background-image: url("./assets/bg4.jpg");
+  }
+}
+.--test {
+  background-image: url("./assets/bg11.avif");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+@media screen and (min-width: 1170px) {
+  .--test {
+    background-image: url("./assets/bg11.avif");
+  }
 }
 .bg-black-gradient-2 {
   background: linear-gradient(

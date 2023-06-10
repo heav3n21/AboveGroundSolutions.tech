@@ -7,7 +7,7 @@ import { navLinks } from "../constants";
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
     return (
-        <nav className=" w-full py-6 flex justify-between object-fill items-center navbar">
+        <nav className="  w-full py-6 flex justify-between object-fill items-center navbar  " >
 
             <img src={logo} alt="hoobank" className="w-[134px] h-[52px] " ></img><p className="text-start flex-col ml-[-49px]  text-2xl flex font-extrabold sm:text-2xl">A G S</p>
             <ul className="list-none sm:flex hidden justify-end items-center flex-1">
