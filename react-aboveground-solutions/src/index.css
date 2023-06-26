@@ -18,6 +18,10 @@ body{
 * {
   scroll-behavior: smooth;
 }
+.loginbg{
+  background-color: rgba(0, 0, 0, 0.6);
+  
+}
 
 .text-gradient {
   /* background: radial-gradient(
