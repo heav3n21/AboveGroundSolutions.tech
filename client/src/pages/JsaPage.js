@@ -52,7 +52,7 @@ const JsaPage = () => {
                         </div>
 
                   
-                        {/* <SearchOldJsa/> */}
+                        <SearchOldJsa/>
                         <QuestionsForJsa/>
 
                     </div>

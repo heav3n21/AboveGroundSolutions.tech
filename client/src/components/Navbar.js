@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { close, logo, menu } from '../assets';
 
 import { navLinks } from "../constants";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
     return (
-        <nav className="   w-full py-6 flex justify-between object-fill items-center navbar  " >
+        <nav className="   w-full py-3 sm:py-5 flex justify-between object-fill items-center navbar  " >
 
             <img src={logo} alt="hoobank" className="w-[134px] animate-pulse h-[52px] " ></img><p className="text-start flex-col ml-[-59px]  text-2xl flex font-extrabold sm:text-2xl">AGS</p>
             <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -17,6 +18,7 @@ const Navbar = () => {
                         <a href={`#${nav.id}`}>
                             {nav.title}
                         </a>
+                        <Link to={`/homepage`}>homepage</Link>
                     </li>
                 ))}
             </ul>
@@ -36,6 +38,7 @@ const Navbar = () => {
                                 </a>
                             </li>
                         ))}
+
                     </ul>
 
                 </div>
