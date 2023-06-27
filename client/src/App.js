@@ -51,8 +51,10 @@ const App = () => (
         <div className={`${styles.paddingX} ${styles.flexCenter} shadow-xl bg-primary shadow-black  `}>
           <div className={`${styles.boxWidth}  `}>
             <Navbar />
+           
           </div>
         </div>
+        <Hero/>
         <Routes>
           <Route path="/" element={<Hero />}></Route>
           <Route path="Login" element={<Login />}></Route>
