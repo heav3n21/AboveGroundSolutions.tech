@@ -12,15 +12,12 @@ const Navbar = () => {
 
             <img src={logo} alt="hoobank" className="w-[134px] animate-pulse h-[52px] " ></img><p className="text-start flex-col ml-[-59px]  text-2xl flex font-extrabold sm:text-2xl">AGS</p>
             <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-                {navLinks.map((nav, index) => (
-                    <li key={nav.id}
-                        className={`font-poppins  font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}  `} >
-                        <a href={`#${nav.id}`}>
-                            {nav.title}
-                        </a>
-                        <Link to={`/homepage`}>homepage</Link>
-                    </li>
-                ))}
+            <Link to={`/`}  className={`font-poppins  font-normal cursor-pointer text-[16px] mr-10  `}>Company</Link>
+
+                <Link to={`/homepage`}  className={`font-poppins  font-normal cursor-pointer text-[16px] mr-10  `}>Homepage</Link>
+                <Link to={`/homepage`}  className={`font-poppins  font-normal cursor-pointer text-[16px] mr-10  `}>JsaCreator</Link>
+                <Link to={`/Login`}  className={`font-poppins  font-normal cursor-pointer text-[16px] mr-0  `}>Login</Link>
+
             </ul>
             <div className=" sm:hidden flex flex-1 justify-end items-center">
                 <img src={toggle ? close : menu}
@@ -30,14 +27,11 @@ const Navbar = () => {
                 />
                 <div className={`${toggle ? 'felx ' : 'hidden'} p-6 shadow-2xl  bg-primary border-b-3  absolute top-20 right-0 shadow-black h-fit w-[50%]  rounded-xl sidebar `}>
                     <ul className="list-none flex flex-col  justify-end items-center flex-1">
-                        {navLinks.map((nav, index) => (
-                            <li key={nav.id}
-                                className={`font-poppins font-normal cursor-pointer text-[16px]  ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}  `} >
-                                <a href={`#${nav.id}`}>
-                                    {nav.title}
-                                </a>
-                            </li>
-                        ))}
+                    <Link to={`/`}  className={`font-poppins  font-normal cursor-pointer text-[16px] mb-10  `}>Company</Link>
+
+                    <Link to={`/homepage`}  className={`font-poppins  font-normal cursor-pointer text-[16px] mb-10  `}>Homepage</Link>
+                <Link to={`/homepage`}  className={`font-poppins  font-normal cursor-pointer text-[16px] mb-10  `}>JsaCreator</Link>
+                <Link to={`/Login`}  className={`font-poppins  font-normal cursor-pointer text-[16px] mb-0  `}>Login</Link>
 
                     </ul>
 
