@@ -15,7 +15,7 @@ const QuestionsForJsa = () => {
                 </input>
             </div>
             <div className="col-span-2 p-1">
-                <h3  className="text-sm">Job #: <span className="text-red-600">*</span> </h3>
+                <h3 className="text-sm">Job #: <span className="text-red-600">*</span> </h3>
                 <input placeholder="donut spot" className="bg-transparent focus:outline-none inputPlaceHolder font-semibold  ">
 
                 </input>
@@ -26,15 +26,15 @@ const QuestionsForJsa = () => {
 
                 </input>
             </div>
-            <div className="col-span-4 p-1">
-                <h3 className="text-sm">Supervisor: <span className="text-red-600">*</span> </h3>
-                <input placeholder="Carlos Garcia" className="pl-1 w-full bg-transparent inputPlaceHolder focus:outline-none    font-semibold  ">
+            <div className="col-span-2 p-1">
+                <h3 className="text-sm">Longitude: <span className="text-red-600">*</span> </h3>
+                <input placeholder="51.5072" className="pl-1 w-full bg-transparent inputPlaceHolder focus:outline-none    font-semibold  ">
 
                 </input>
             </div>
-            <div className="col-span-4 p-1">
-                <h3 className="text-sm">Supervisor: <span className="text-red-600">*</span> </h3>
-                <input placeholder="Carlos Garcia" className="pl-1 w-full bg-transparent inputPlaceHolder focus:outline-none    font-semibold  ">
+            <div className="col-span-2 p-1">
+                <h3 className="text-sm">Latitude: <span className="text-red-600">*</span> </h3>
+                <input placeholder="0.1276" className="pl-1 w-full bg-transparent inputPlaceHolder focus:outline-none    font-semibold  ">
 
                 </input>
 
@@ -46,9 +46,29 @@ const QuestionsForJsa = () => {
                     <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value="" class="accent-orange-600 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
                 </div>
                 <div class="ml-2 text-sm">
-                    <label for="helper-checkbox" class="font-medium text-xs text-white dark:text-gray-300">Matthew Garcia</label>
+                    <label for="helper-checkbox" class="font-medium text-xs text-white dark:text-gray-300">Antonio Garcia</label>
                     <p id="helper-checkbox-text" class="text-[10px] font-normal text-gray-500 dark:text-gray-300"> Company: AboveGround</p>
                 </div>
+            </div>
+            <div class="flex col-span-2">
+                <div class="flex items-center h-5">
+                    <input id="checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value="" class="w-4 h-4 accent-orange-600 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                </div>
+                <div class="ml-2 text-sm">
+                    <label for="checkbox" class="font-medium text-xs text-white dark:text-gray-300">alex Garcia</label>
+                    <p id="helper-checkbox-text" class="text-[10px] font-normal text-gray-500 dark:text-gray-300"> Company: AboveGround</p>
+                </div>
+                
+            </div>
+            <div class="flex col-span-2">
+                <div class="flex items-center h-5">
+                    <input id="checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value="" class="w-4 h-4 accent-orange-600 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                </div>
+                <div class="ml-2 text-sm">
+                    <label for="checkbox" class="font-medium text-xs text-white dark:text-gray-300">Carlos Garcia</label>
+                    <p id="helper-checkbox-text" class="text-[10px] font-normal text-gray-500 dark:text-gray-300"> Company: AboveGround</p>
+                </div>
+                
             </div>
             <div class="flex col-span-2">
                 <div class="flex items-center h-5">
@@ -58,6 +78,7 @@ const QuestionsForJsa = () => {
                     <label for="checkbox" class="font-medium text-xs text-white dark:text-gray-300">Matthew Garcia</label>
                     <p id="helper-checkbox-text" class="text-[10px] font-normal text-gray-500 dark:text-gray-300"> Company: AboveGround</p>
                 </div>
+                
             </div>
 
             <div className="col-span-4 p-1">
@@ -109,65 +130,138 @@ const QuestionsForJsa = () => {
 
                 </input>
             </div>
-            <h3 class="col-span-4  font-semibold  dark:text-white text-sm">1. Job Safety/ Task for Today</h3>
-            <ul class="col-span-4 items-center w-full text-sm font-medium   rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-                <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+            <h3 class="col-span-4  font-semibold  dark:text-white text-sm border-t">1. Job Safety/ Task for Today</h3>
+            <ul class="col-span-2 items-center w-full text-sm font-medium   rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                <li class="w-full col-span-2 border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                     <div class="flex items-center pl-3">
                         <input id="vue-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 accent-orange-600  border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
-                        <label for="vue-checkbox-list" class="w-full py-3 ml-2 text-sm font-medium  dark:text-gray-300">Fist Aid kit on site</label>
+                        <label for="vue-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">Fist Aid kit on site</label>
                     </div>
                 </li>
-                <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                <li class="w-full col-span-2 border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                     <div class="flex items-center pl-3">
                         <input id="react-checkbox-list" type="checkbox" value="" class="w-4 h-4 accent-orange-600  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
-                        <label for="react-checkbox-list" class="w-full py-3 ml-2 text-sm font-medium  dark:text-gray-300">Rescue Bag at Base of Tower</label>
+                        <label for="react-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">Rescue Bag at Base of Tower</label>
                     </div>
                 </li>
-                <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                <li class="w-full border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                     <div class="flex items-center pl-3">
                         <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 accent-orange-600  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
-                        <label for="angular-checkbox-list" class="w-full py-3 ml-2 text-sm font-medium  dark:text-gray-300">Tower Erection</label>
+                        <label for="angular-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">Tower Erection</label>
                     </div>
 
                 </li>
-
-                <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                <li class="w-full  dark:border-gray-600">
+                    <div class="flex items-center pl-3">
+                        <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 accent-orange-600  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                        <label for="laravel-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">other: <input className="bg-transparent font-poppins text-xs pl-2" placeholder="type here..." /></label>
+                    </div>
+                </li>
+            </ul>
+            <ul class="col-span-2 items-center w-full text-sm font-medium   rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+            
+                <li class="w-full border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                     <div class="flex items-center pl-3">
                         <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 accent-orange-600  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
-                        <label for="angular-checkbox-list" class="w-full py-3 ml-2 text-sm font-medium  dark:text-gray-300">Elecrical</label>
+                        <label for="angular-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">Elecrical</label>
                     </div>
                 </li>
 
-                <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                <li class="w-full border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                     <div class="flex items-center pl-3">
                         <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 accent-orange-600  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
-                        <label for="angular-checkbox-list" class="w-full py-3 ml-2 text-sm font-medium  dark:text-gray-300">Civil/concrete</label>
+                        <label for="angular-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">Civil/concrete</label>
                     </div>
                 </li>
 
                 <li class="w-full dark:border-gray-600">
                     <div class="flex items-center pl-3">
                         <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 accent-orange-600  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
-                        <label for="laravel-checkbox-list" class="w-full py-3 ml-2 text-sm font-medium  dark:text-gray-300">Line and Antennas</label>
+                        <label for="laravel-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">Line and Antennas</label>
                     </div>
                 </li>
-                <li class="w-full dark:border-gray-600">
-                    <div class="flex items-center pl-3">
-                        <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 accent-orange-600  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
-                        <label for="laravel-checkbox-list" class="w-full py-3 ml-2 text-sm font-medium  dark:text-gray-300">other: <input className="bg-transparent font-poppins border-b text-xs pl-1" placeholder="type here..." /></label>
-                    </div>
-                </li>
-                
+              
+
 
             </ul>
-            <div className="col-span-4 p-1">
+            <div className="col-span-4 p-1 text-sm border-t">
                 <h3>RF Signage & MPE readings </h3>
-                <input placeholder="other" className="pl-1 w-full bg-transparent inputPlaceHolder focus:outline-none    font-semibold  ">
-
-                </input>
-
             </div>
+            <ul class="col-span-4 items-center w-full text-sm font-medium   rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                <li class="w-full ">
+                    <div class="flex items-center pl-3">
+                        <input id="vue-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 accent-orange-600  border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                        <label for="vue-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">Blue Notice Sign</label>
+                    </div>
+                </li>
+                <li class="w-full dark:border-gray-600">
+                    <div class="flex items-center pl-3">
+                        <label for="laravel-checkbox-list" class="w-full py-1 text-xs ">Equiment MPEreading: <input className="bg-transparent font-poppins text-xs pl-1" placeholder="type here..." /></label>
+                    </div>
+                </li>
+                <li class="w-full dark:border-gray-600">
+                    <div class="flex items-center pl-3">
+                        <label for="laravel-checkbox-list" class="w-full py-1 text-xs ">Elevation MPEreading: <input className="bg-transparent font-poppins border-b text-xs pl-1" placeholder="type here..." /></label>
+                    </div>
+                </li>
+                <li class="w-full border-t border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                    <div class="flex items-center pl-3">
+                        <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 accent-orange-600  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                        <label for="angular-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">Yellow caution Sign</label>
+                    </div>
 
+                </li>
+                <li class="w-full dark:border-gray-600">
+                    <div class="flex items-center pl-3">
+                        <label for="laravel-checkbox-list" class="w-full py-1 text-xs ">Equiment MPEreading: <input className="bg-transparent font-poppins border-b text-xs pl-1" placeholder="type here..." /></label>
+                    </div>
+                </li>
+                <li class="w-full dark:border-gray-600">
+                    <div class="flex items-center pl-3">
+                        <label for="laravel-checkbox-list" class="w-full py-1 text-xs ">Elevation MPEreading: <input className="bg-transparent font-poppins border-b text-xs pl-1" placeholder="type here..." /></label>
+                    </div>
+                </li>
+                <li class="w-full border-t border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                    <div class="flex items-center pl-3">
+                        <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 accent-orange-600  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                        <label for="angular-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">red Warning Sign</label>
+                    </div>
+
+                </li>
+                <li class="w-full dark:border-gray-600">
+                    <div class="flex items-center pl-3">
+                        <label for="laravel-checkbox-list" class="w-full py-1 text-xs ">Equiment MPEreading: <input className="bg-transparent font-poppins border-b text-xs pl-1" placeholder="type here..." /></label>
+                    </div>
+                </li>
+                <li class="w-full dark:border-gray-600">
+                    <div class="flex items-center pl-3">
+                        <label for="laravel-checkbox-list" class="w-full py-1 text-xs ">Elevation MPEreading: <input className="bg-transparent font-poppins border-b text-xs pl-1" placeholder="type here..." /></label>
+                    </div>
+                </li>
+
+                <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                    <div class="flex items-center pl-3">
+                        <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 accent-orange-600  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                        <label for="angular-checkbox-list" class="w-full py-3 ml-2 text-xs font-medium  dark:text-gray-300">Red Danger Sign</label>
+                    </div>
+                </li>
+
+                <div className="col-span-4 p-1 text-sm">
+                    <h3 className="text-sm">Job/ Tasks (Be Specific) <span className="text-red-600">*</span> </h3>
+                    <textarea className="w-full loginbg text-gray-400 h-[200px]  text-xs resize-none p-2 mt-2" />
+                </div>
+                <div className="col-span-4 p-1 text-sm">
+                    <h3 className="text-sm">Job/ Tasks (Be Specific) <span className="text-red-600">*</span> </h3>
+                    <textarea className="w-full loginbg text-gray-400 h-[200px]  text-xs  resize-none p-2 mt-2" />
+                </div>
+                <div className="col-span-4 p-1 text-sm">
+                    <h3 className="text-sm">Job/ Tasks (Be Specific) <span className="text-red-600">*</span> </h3>
+                    <textarea className="w-full loginbg text-gray-400 h-[200px] text-xs border-orange-500  resize-none p-2 mt-2" />
+                </div>
+
+
+
+            </ul>
 
 
 

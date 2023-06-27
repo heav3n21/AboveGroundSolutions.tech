@@ -13,11 +13,7 @@ const Hero = () => {
     const lineHeight = 10;
     let verticalPosition = 20;
     const createPdf = () => {
-        // It can parse html:
-        // <table id="my-table"><!-- ... --></table>
-
-
-        // Or use javascript directly:
+ 
         autoTable(doc, {
             headStyles: {
                 fillColor: "orange"
@@ -82,7 +78,7 @@ const Hero = () => {
 
         })
 
-        doc.addImage(img, 'PNG', 40, 15, 20, 10);
+        // doc.addImage(img, 'PNG', 40, 15, 20, 10);
         doc.save("a4.pdf");
     }
     return (
