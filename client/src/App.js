@@ -7,14 +7,8 @@ import './index.css';
 import JsaPage from "./pages/JsaPage";
 import {
   Navbar,
-  Billing,
-  CardDeal,
-  Business,
-  Clients,
-  CTA,
-  Stats,
+
   Footer,
-  Testimonials,
   Hero,
   Login,
   CreateJSA
