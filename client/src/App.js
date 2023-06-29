@@ -54,7 +54,7 @@ const App = () => (
            
           </div>
         </div>
-        <Hero/>
+     
         <Routes>
           <Route path="/" element={<Hero />}></Route>
           <Route path="Login" element={<Login />}></Route>
