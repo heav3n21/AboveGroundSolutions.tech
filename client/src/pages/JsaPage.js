@@ -4,9 +4,13 @@ import { BsFolder, BsFolderPlus, BsPersonCircle } from 'react-icons/bs'
 import SearchOldJsa from "../components/SearchOldJsa";
 import QuestionsForJsa from "../components/QuestionsForJsa";
 import { AnimatePresence, motion } from "framer-motion";
-
+import { QUERY_USER } from "../utils/queries";
+import { useQuery } from "@apollo/client";
 
 const JsaPage = () => {
+    const {loading,data} = useQuery(QUERY_USER,{
+        variables:{email:"email."}
+    })
     const [newOrRecents, setNewOrRecents] = useState(true)
 
 
@@ -28,7 +32,7 @@ const JsaPage = () => {
                     <div className="grid grid-cols-3 m-5">
 
                         <h1 className="font-poppins font-bold text-2xl col-span-2">
-                            matthew Garcia
+                            { loading ?"hi": data.oneUser.username }
                         </h1 >
                         <div className="justify-self-end ">
                             <BsPersonCircle size={60} />
